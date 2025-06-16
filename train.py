@@ -14,6 +14,7 @@ warnings.filterwarnings("ignore")
 import matplotlib.pyplot as plt
 import os
 
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 def train_model(model, X_train, y_train, name, config):
     """train

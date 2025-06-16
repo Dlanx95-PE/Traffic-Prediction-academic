@@ -90,7 +90,7 @@ def plot_results(y_true, y_preds, names):
     ax.xaxis.set_major_formatter(date_format)
     fig.autofmt_xdate()
     
-    plt.savefig("image_prediction/eva.png")
+    plt.savefig("images/eva.png")
     plt.close()
 
 
@@ -113,7 +113,7 @@ def main():
             X_test = np.reshape(X_test, (X_test.shape[0], X_test.shape[1]))
         else:
             X_test = np.reshape(X_test, (X_test.shape[0], X_test.shape[1], 1))
-        file = 'image_prediction/' + name + '.png'
+        file = 'images/' + name + '.png'
         plot_model(model, to_file=file, show_shapes=True)
         predicted = model.predict(X_test)
         predicted = scaler.inverse_transform(predicted.reshape(-1, 1)).reshape(1, -1)[0]

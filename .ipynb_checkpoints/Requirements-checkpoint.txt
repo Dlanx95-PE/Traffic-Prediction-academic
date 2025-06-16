@@ -1,5 +1,5 @@
 # requirements
-Tensorflow
+Tensorflow-gpu
 Keras 
 scikit-learn
 pydot 
