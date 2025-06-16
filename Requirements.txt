@@ -1,4 +1,8 @@
 # requirements
-Tensorflow-gpu>=last update
-Keras >=last update
-scikit-learn>=last update
+Tensorflow-gpu
+Keras 
+scikit-learn
+pydot 
+matplotlib
+seaborn
+numpy
